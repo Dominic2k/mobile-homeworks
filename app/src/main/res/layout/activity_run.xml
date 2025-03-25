@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/tv_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Điểm: 100"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- CheckBox để đặt cược -->
+    <CheckBox
+        android:id="@+id/cb_racer1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đặt cược: Xe số 1" />
+
+    <SeekBar
+        android:id="@+id/sb_racer1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:max="100"
+        android:progress="0"
+        android:thumb="@android:drawable/presence_video_away" />
+
+    <CheckBox
+        android:id="@+id/cb_racer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đặt cược: Xe số 2" />
+
+    <SeekBar
+        android:id="@+id/sb_racer2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:max="100"
+        android:progress="0"
+        android:thumb="@android:drawable/presence_video_busy" />
+
+    <CheckBox
+        android:id="@+id/cb_racer3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đặt cược: Xe số 3" />
+
+    <SeekBar
+        android:id="@+id/sb_racer3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:max="100"
+        android:progress="0"
+        android:thumb="@android:drawable/presence_video_online" />
+
+    <!-- Nút bắt đầu và chơi lại -->
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Bắt đầu"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_restart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Chơi lại"
+        android:textSize="18sp"
+        android:visibility="gone" />
+</LinearLayout>
